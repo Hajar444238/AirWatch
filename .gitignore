@@ -1,0 +1,19 @@
+# Dataset
+data/*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
