@@ -143,6 +143,4 @@ Le développement de la plateforme est organisé autour de plusieurs modules :
 - **Machine Learning :** développement et évaluation des modèles prédictifs.
 - **Restitution :** stockage des résultats et visualisation à travers un dashboard.
 
-## 10. Auteurs
-
 **Projet académique Big Data — AirWatch**
