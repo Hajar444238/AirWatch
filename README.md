@@ -65,6 +65,8 @@ Cette couche assure la collecte et l'acheminement des données vers l'environnem
 
 ### 5.2. Couche de stockage — Data Storage
 
+Voir le [guide d'archivage Kafka vers HDFS](storage/README.md) pour démarrer le job, rejouer l'historique et vérifier les données.
+
 Cette couche assure la conservation des données dans un environnement distribué.
 
 - Hadoop HDFS : stockage distribué et tolérant aux pannes.

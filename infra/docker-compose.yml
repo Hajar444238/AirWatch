@@ -19,7 +19,7 @@ services:
       - "8080"
     ports:
       - "7077:7077"
-      - "8080:8080"
+      - "18080:8080"
     networks:
       - airwatch-network
     restart: unless-stopped
@@ -42,7 +42,7 @@ services:
       - --webui-port
       - "8081"
     ports:
-      - "8081:8081"
+      - "18081:8081"
     depends_on:
       - spark-master
     networks:
