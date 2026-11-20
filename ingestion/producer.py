@@ -53,13 +53,13 @@ def create_producer():
 # LECTURE DU DATASET
 # -----------------------------
 
-def read_datasets():
-    if not CSV_FILES:
+def read_datasets(csv_files=CSV_FILES):
+    if not csv_files:
         raise FileNotFoundError("Aucun fichier CSV trouve dans data/")
 
     datasets = []
 
-    for csv_file in CSV_FILES:
+    for csv_file in csv_files:
         logger.info(f"Lecture du fichier : {csv_file.name}")
 
         df = pd.read_csv(csv_file)
