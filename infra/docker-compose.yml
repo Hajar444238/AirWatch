@@ -170,7 +170,24 @@ services:
       - airwatch-network
 
     restart: unless-stopped    
-
+  # =========================
+  # POSTGRESQL (restitution)
+  # =========================
+  postgres:
+    image: postgres:16
+    container_name: airwatch-postgres
+    hostname: postgres
+    environment:
+      POSTGRES_USER: airwatch
+      POSTGRES_PASSWORD: airwatch
+      POSTGRES_DB: airwatch
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - airwatch-network
+    restart: unless-stopped
 # =========================
 # NETWORK
 # =========================
@@ -186,3 +203,4 @@ volumes:
   datanode1_data:
   datanode2_data:
   kafka_data:
+  postgres_data:
